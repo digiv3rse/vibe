@@ -1,0 +1,38 @@
+{
+  "name": "@vibe/embed",
+  "description": "Embed Player",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 4001",
+    "build": "next build",
+    "export": "next export",
+    "start": "yarn build && next start --port 4001",
+    "typecheck": "tsc --pretty",
+    "lint": "eslint . --ext .js,.ts,.tsx"
+  },
+  "dependencies": {
+    "@livepeer/react": "^3.1.9",
+    "graphql": "^16.8.1",
+    "next": "14.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.67",
+    "@types/react-dom": "18.2.22",
+    "@vibe/browser": "*",
+    "@vibe/config": "*",
+    "@vibe/constants": "*",
+    "@vibe/digi": "*",
+    "@vibe/generic": "*",
+    "@vibe/ui": "*",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.4.3"
+  }
+}

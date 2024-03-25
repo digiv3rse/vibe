@@ -1,0 +1,19 @@
+fragment LiveStreamMetadataV3Fields on LiveStreamMetadataV3 {
+  id
+  rawURI
+  tags
+  contentWarning
+  attributes {
+    ...MetadataAttributeFields
+  }
+  startsAt
+  endsAt
+  playbackURL
+  liveURL
+  checkLiveAPI
+  title
+  content
+  attachments {
+    ...PublicationMetadataMediaFields
+  }
+}

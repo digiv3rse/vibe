@@ -1,0 +1,18 @@
+version = 1
+
+exclude_patterns = [
+  "node_modules",
+  ".next",
+  ".github",
+  ".vscode",
+  ".husky",
+  "packages/digi/generated.ts",
+  "yarn.lock"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["react"]

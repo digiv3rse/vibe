@@ -1,0 +1,31 @@
+{
+  "name": "vibe",
+  "description": "Talk, Amplify, Post, Explore",
+  "version": "2.0.2-beta",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/helpers/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --parallel",
+    "dev": "turbo run dev --parallel",
+    "start": "turbo run start --parallel",
+    "codegen": "turbo run codegen --parallel",
+    "lint": "turbo run lint --parallel",
+    "typecheck": "turbo run typecheck --parallel",
+    "prepare": "husky",
+    "api:deploy": "turbo run worker:deploy --parallel",
+    "format": "npx prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "turbo": "1.13.0"
+  },
+  "engines": {
+    "node": ">=16.18.1 <=19.0.0"
+  },
+  "packageManager": "yarn@1.22.19"
+}

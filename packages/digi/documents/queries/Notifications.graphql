@@ -1,0 +1,100 @@
+query Notifications($request: NotificationRequest!) {
+  notifications(request: $request) {
+    items {
+      ... on ReactionNotification {
+        id
+        publication {
+          ... on Post {
+            ...PostFields
+          }
+          ... on Comment {
+            ...CommentFields
+          }
+          ... on Quote {
+            ...QuoteFields
+          }
+        }
+        reactions {
+          profile {
+            ...ProfileFields
+          }
+        }
+      }
+      ... on CommentNotification {
+        id
+        comment {
+          ...CommentFields
+        }
+      }
+      ... on MirrorNotification {
+        id
+        mirrors {
+          mirrorId
+          profile {
+            ...ProfileFields
+          }
+        }
+        publication {
+          ... on Post {
+            ...PostFields
+          }
+          ... on Comment {
+            ...CommentFields
+          }
+          ... on Quote {
+            ...QuoteFields
+          }
+        }
+      }
+      ... on QuoteNotification {
+        id
+        quote {
+          ...QuoteFields
+        }
+      }
+      ... on ActedNotification {
+        id
+        actions {
+          actedAt
+          by {
+            ...ProfileFields
+          }
+        }
+        publication {
+          ... on Post {
+            ...PostFields
+          }
+          ... on Comment {
+            ...CommentFields
+          }
+          ... on Mirror {
+            ...MirrorFields
+          }
+        }
+      }
+      ... on FollowNotification {
+        id
+        followers {
+          ...ProfileFields
+        }
+      }
+      ... on MentionNotification {
+        id
+        publication {
+          ... on Post {
+            ...PostFields
+          }
+          ... on Comment {
+            ...CommentFields
+          }
+          ... on Quote {
+            ...QuoteFields
+          }
+        }
+      }
+    }
+    pageInfo {
+      next
+    }
+  }
+}

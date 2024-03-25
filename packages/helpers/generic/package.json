@@ -1,0 +1,19 @@
+{
+  "name": "@vibe/generic",
+  "version": "0.0.0",
+  "license": "AGPL-3.0",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "typecheck": "tsc --pretty"
+  },
+  "dependencies": {
+    "@digiv3rse/metadata": "^1.1.0",
+    "dayjs-twitter": "^0.5.0",
+    "viem": "^2.8.18"
+  },
+  "devDependencies": {
+    "@vibe/constants": "*",
+    "typescript": "5.4.3"
+  }
+}

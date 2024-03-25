@@ -1,0 +1,22 @@
+name = "api"
+account_id="909e156a4a1e8bb0acc87ba88db53164"
+compatibility_date = "2023-01-01"
+routes = [
+	{ pattern = "api.digiv3rse.social", custom_domain = true }
+]
+keep_vars = true
+node_compat = true
+
+[env.production.vars]
+STORAGE_ACCESS_KEY="juaesxlqhj7d54kqzvtw3hq2pxlag"
+STORAGE_ACCESS_SECRET="j2kntymhm75wpx236hix4i5rvd2g24hn67qdisui3i6dmlfabcqv6"
+LOGTAIL_API_KEY="MAwWFv9wBnZ2KBizPagVrePT"
+INGEST_REST_ENDPOINT=""
+WALLET_PRIVATE_KEY="a95dea2368a4c8273f49b5d5f0ff74789021e6a7ffc99c85285aefa2423bddb3"
+LIVEPEER_API_TOKEN="0327943a-ea8d-4782-924f-7f86fbe5cf82"
+
+[[d1_databases]]
+binding = "VIBE_DB"
+database_name = "vibe-prod-d1"
+database_id = "b9fd7d44-fc9a-410e-9a15-b720bf34fd8e"
+migrations_dir = "migrations"

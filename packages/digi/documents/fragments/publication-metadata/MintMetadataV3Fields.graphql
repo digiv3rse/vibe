@@ -1,0 +1,14 @@
+fragment MintMetadataV3Fields on MintMetadataV3 {
+  id
+  rawURI
+  tags
+  contentWarning
+  attributes {
+    ...MetadataAttributeFields
+  }
+  mintLink
+  attachments {
+    ...PublicationMetadataMediaFields
+  }
+  content
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@vibe/digi",
+  "version": "0.0.0",
+  "license": "AGPL-3.0",
+  "main": "./generated.ts",
+  "private": true,
+  "scripts": {
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/client": "3.9.8"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/fragment-matcher": "^5.0.2",
+    "@graphql-codegen/typescript": "^4.0.6",
+    "@graphql-codegen/typescript-operations": "^4.2.0",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.0",
+    "typescript": "5.4.3"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@vibe/config/react.tsconfig.json"
+}

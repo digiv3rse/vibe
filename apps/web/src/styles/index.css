@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Start - To fix radix CLS on dropdown and modal */
+html {
+  scrollbar-gutter: stable;
+}
+html body[data-scroll-locked] {
+  margin-right: 0 !important;
+}
+html body[style] {
+  margin: 0 !important;
+}
+/* Ends - To fix radix CLS on dropdown and modal */
+
+html {
+  @apply overflow-x-hidden overflow-y-scroll;
+}
+
+body {
+  @apply min-h-screen bg-white text-black antialiased dark:bg-black dark:text-white;
+}
+
+.tape-border {
+  @apply border border-[#00000020] dark:border-[#ffffff20];
+}
+
+.text-dust {
+  @apply text-[#666666] dark:text-[#888888];
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.middot:after {
+  content: '•';
+  @apply mx-1.5 flex text-[10px] opacity-60;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* interweave linkify */
+.interweave-content a {
+  @apply text-brand-500;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.livepeer-aspect-ratio-container {
+  @apply outline-none;
+}
+
+/* User Preview tippy override */
+.preview-tippy-content > div {
+  @apply !px-0 !py-0;
+}

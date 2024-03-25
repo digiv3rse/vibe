@@ -1,0 +1,17 @@
+{
+  "name": "@vibe/constants",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "typecheck": "tsc --pretty"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@vibe/config": "*",
+    "@vibe/digi": "*",
+    "typescript": "^5.4.3"
+  }
+}

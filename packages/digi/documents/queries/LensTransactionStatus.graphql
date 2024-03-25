@@ -1,0 +1,8 @@
+query DiGiTransactionStatus($request: DiGiTransactionStatusRequest!) {
+  digiTransactionStatus(request: $request) {
+    status
+    txHash
+    reason
+    extraInfo
+  }
+}

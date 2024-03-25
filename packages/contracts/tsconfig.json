@@ -1,0 +1,6 @@
+{
+  "extends": "@vibe/config/base.tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs"
+  }
+}

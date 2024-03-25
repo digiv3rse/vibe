@@ -1,0 +1,19 @@
+query ApprovedModuleAllowanceAmount(
+  $request: ApprovedModuleAllowanceAmountRequest!
+) {
+  approvedModuleAllowanceAmount(request: $request) {
+    allowance {
+      value
+      asset {
+        ...Erc20Fields
+      }
+      rate(request: { for: USD }) {
+        ...FiatAmountFields
+      }
+    }
+    moduleContract {
+      ...NetworkAddressFields
+    }
+    moduleName
+  }
+}

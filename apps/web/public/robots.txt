@@ -1,0 +1,8 @@
+Sitemap: https://digiv3rse.social/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /_next/*
+Disallow: /api/*
+Disallow: /settings/*

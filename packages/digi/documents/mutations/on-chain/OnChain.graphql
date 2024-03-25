@@ -1,0 +1,47 @@
+mutation PostOnchain($request: OnchainPostRequest!) {
+  postOnchain(request: $request) {
+    ... on RelaySuccess {
+      txHash
+      txId
+    }
+    ... on DiGiProfileManagerRelayError {
+      reason
+    }
+  }
+}
+
+mutation QuoteOnchain($request: OnchainQuoteRequest!) {
+  quoteOnchain(request: $request) {
+    ... on RelaySuccess {
+      txHash
+      txId
+    }
+    ... on DiGiProfileManagerRelayError {
+      reason
+    }
+  }
+}
+
+mutation CommentOnchain($request: OnchainCommentRequest!) {
+  commentOnchain(request: $request) {
+    ... on RelaySuccess {
+      txHash
+      txId
+    }
+    ... on DiGiProfileManagerRelayError {
+      reason
+    }
+  }
+}
+
+mutation MirrorOnchain($request: OnchainMirrorRequest!) {
+  mirrorOnchain(request: $request) {
+    ... on RelaySuccess {
+      txHash
+      txId
+    }
+    ... on DiGiProfileManagerRelayError {
+      reason
+    }
+  }
+}

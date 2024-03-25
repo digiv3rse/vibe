@@ -1,0 +1,53 @@
+fragment ProfileFields on Profile {
+  id
+  ownedBy {
+    ...NetworkAddressFields
+  }
+  signless
+  sponsor
+  createdAt
+  stats {
+    ...ProfileStatsFields
+  }
+  operations {
+    ...ProfileOperationsFields
+  }
+  interests
+  guardian {
+    protected
+    cooldownEndsOn
+  }
+  invitedBy {
+    id
+  }
+  onchainIdentity {
+    proofOfHumanity
+    ens {
+      name
+    }
+    sybilDotOrg {
+      verified
+      source {
+        twitter {
+          handle
+        }
+      }
+    }
+    worldcoin {
+      isHuman
+    }
+  }
+  followNftAddress {
+    address
+    chainId
+  }
+  metadata(request: { appId: "vibe", useFallback: true }) {
+    ...ProfileMetadataFields
+  }
+  followModule {
+    ...FollowModuleFields
+  }
+  handle {
+    ...HandleInfoFields
+  }
+}

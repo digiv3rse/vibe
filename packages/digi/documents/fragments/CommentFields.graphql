@@ -1,0 +1,6 @@
+fragment CommentFields on Comment {
+  ...CommentBaseFields
+  commentOn {
+    ...PrimaryPublicationFields
+  }
+}

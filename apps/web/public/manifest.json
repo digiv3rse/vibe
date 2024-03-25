@@ -1,0 +1,30 @@
+{
+  "id": "social.vibe",
+  "name": "Vibe",
+  "short_name": "Vibe",
+  "description": "Talk, Amplify, Post, Explore.",
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "iconPath": "https://static.digiv3rse.xyz/brand/favicons/V3/apple-icon-512x512.png",
+  "icons": [
+    {
+      "src": "https://static.digiv3rse.xyz/brand/favicons/V3/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://static.digiv3rse.xyz/brand/favicons/V3/apple-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://static.digiv3rse.xyz/brand/favicons/V3/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
