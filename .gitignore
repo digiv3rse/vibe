@@ -11,6 +11,7 @@ coverage
 out/
 .swc
 build
+.yarn
 
 # misc
 .DS_Store
