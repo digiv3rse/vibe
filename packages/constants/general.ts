@@ -2,7 +2,7 @@ import { CustomFiltersType } from '@vibe/digi'
 import DiGiEndpoint from '@vibe/digi/endpoints'
 
 export const VIBE_APP_NAME = 'Vibe'
-export const VIBE_APP_DESCRIPTION = 'Talk, Amplify, Post, Explore'
+export const VIBE_APP_DESCRIPTION = 'Talk, Post, Explore and Vibing with your friends all day long.'
 
 export const DIGI_ENV = process.env.NEXT_PUBLIC_ENVIRONMENT ?? 'mainnet'
 export const IS_MAINNET = DIGI_ENV === 'mainnet'
